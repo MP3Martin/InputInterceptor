@@ -2,15 +2,12 @@
 which added bool returns to [0x2E757](https://github.com/0x2E757) @ https://github.com/0x2E757/InputInterceptor/  
 C# wrapper for Francisco Lopes' mouse and keyboard [Interception API](https://www.oblita.com/interception.html)
 
-#### This fork
+This fork
 - modified the [`CallbackAction` delegate](blob/master/InputInterceptor/Classes/Hook.cs#L13)
  to also pass numeric [`Context` and `device`](blob/master/InputInterceptor/Classes/Hook.cs#L68),  
  enabling callbacks to selectively divert devices.
 - modified Initialize() to detect null bytes from missing/defective `interception_x*.dll`,  
  instead returning false
-
-#### This branch:&nbsp; `stripped`
-- remove `install-interception.exe` and other stuff not needed for SimHub plugin
 
 #### Note!
 - A [WPF XAML](https://github.com/blekenbleu/WPF_XAML) app directly accessing this `static class`
