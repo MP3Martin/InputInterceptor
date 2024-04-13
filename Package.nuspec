@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>InputInterceptor</id>
-    <version>2.2.1</version>
-    <authors>0x2E757</authors>
-    <owners>0x2E757</owners>
+    <id>MP3Martin.InputInterceptor.PersonalFork</id>
+    <version>1.0.2</version>
+    <authors>0x2E757,MP3Martin</authors>
+    <owners>MP3Martin</owners>
     <license type="expression">MIT</license>
-    <repository type="git" url="https://github.com/0x2E757/InputInterceptor.git" branch="master" />
+    <repository type="git" url="https://github.com/MP3Martin/InputInterceptor-PersonalFork.git" branch="master" />
+    <readme>README.md</readme>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Library for keyboard and mouse input interception and simulation</description>
-    <copyright>Copyright 2019</copyright>
-    <tags>inputinterceptor input interceptor intercept capture hook mouse keyboard keys buttons simulate simulation interception driver</tags>
+    <description>Library for keyboard and mouse input interception and simulation. Forked for personal usage.</description>
+    <copyright>Copyright 2023</copyright>
+    <tags></tags>
     <dependencies>
       <group targetFramework="netstandard1.3">
         <dependency id="Microsoft.Win32.Registry" version="5.0.0" />
@@ -26,5 +27,6 @@
   <files>
     <file src="InputInterceptor\bin\Release\**\*.dll" target="lib" />
     <file src="InputInterceptor\bin\Release\**\*.pdb" target="lib" />
+    <file src="README.md" target="\" />
   </files>
 </package>
