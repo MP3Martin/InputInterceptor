@@ -130,9 +130,9 @@ namespace InputInterceptorNS
             base((Filter)KeyboardFilter.All, InputInterceptor.IsKeyboard, callback)
         { }
 
-        protected override void CallbackWrapper(ref Stroke stroke)
+        protected override Boolean CallbackWrapper(ref Stroke stroke)
         {
-            this.Callback(ref stroke.Key);
+            return this.Callback(ref stroke.Key);
         }
 
         public Boolean SetKeyState(KeyCode code, KeyState state)

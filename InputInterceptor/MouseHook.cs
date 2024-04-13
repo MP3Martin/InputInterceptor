@@ -29,9 +29,9 @@ namespace InputInterceptorNS
             base((Filter)MouseFilter.All, InputInterceptor.IsMouse, callback)
         { }
 
-        protected override void CallbackWrapper(ref Stroke stroke)
+        protected override Boolean CallbackWrapper(ref Stroke stroke)
         {
-            this.Callback(ref stroke.Mouse);
+            return this.Callback(ref stroke.Mouse);
         }
 
         public Boolean SetMouseState(MouseState state, Int16 rolling = 0)
