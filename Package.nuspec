@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>MP3Martin.InputInterceptor.PersonalFork</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>0x2E757,MP3Martin</authors>
     <owners>MP3Martin</owners>
     <license type="expression">MIT</license>
